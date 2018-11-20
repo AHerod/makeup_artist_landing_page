@@ -9,6 +9,7 @@ RWD landing page based on my design.
 - JS
 - SCSS
 - WEBPACK
+- PHP
 
 
 
