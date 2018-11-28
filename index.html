@@ -5,85 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Natalia Sztuka | makeup artist </title>
-  <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 </head>
 <body>
 
-<div class = "header">
-  <h1> Natalia Sztuka</h1>
-  <h2> MAKEUP ARTIST</h2>
-  <button>Portfolio</button>
+<div class="header">
+    <h1 class="header__title">Natalia Sztuka</h1>
+    <h2 class="header__subtitle">makeup artist</h2>
+    <button class="header__button">PORTFOLIO</button>
 </div>
-<div class = "about">
-  <p>
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-  </p>
-
-</div>
-<div class="gallery">
-<section class="section">
-    <h1>Portfolio</h1>
-    <div class="grid">
-        <div class="item item--large ">
-            <div class="item__details">
-                jelly-o brownie sweet
-            </div>
-        </div>
-        <div class="item item--medium">
-            <div class="item__details">
-                Muffin jelly gingerbread
-            </div>
-        </div>
-        <div class="item item--large">
-            <div class="item__details">
-                sesame snaps chocolate
-            </div>
-        </div>
-        <div class="item item--large">
-            <div class="item__details">
-                Oat cake
-            </div>
-        </div>
-        <div class="item item--full">
-            <div class="item__details">
-                jujubes cheesecake
-            </div>
-        </div>
-        <div class="item item--medium">
-            <div class="item__details">
-                Dragée pudding brownie
-            </div>
-        </div>
-        <div class="item item--large">
-            <div class="item__details">
-                Oat cake
-            </div>
-        </div>
-        <div class="item item item--medium">
-            <div class="item__details">
-                powder toffee
-            </div>
-        </div>
-        <div class="item item--large">
-            <div class="item__details">
-                pudding cheesecake
-            </div>
-        </div>
-        <div class="item item--large">
-            <div class="item__details">
-                toffee bear claw
-            </div>
-        </div>
-        <div class="item item--full">
-            <div class="item__details">
-                toffee bear claw
-            </div>
-        </div>
-
+<section class="about">
+    <div class="about__card">
+        <h1 class="sectionTitle">O MNIE</h1>
+        <p class="sectionText">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum
+        </p>
     </div>
+    <img src="" class="about__photo"/>
 </section>
-</div>
+<div class="gallery">
+    <section class="portfolio">
+        <h1 class="sectionTitle">Portfolio</h1>
+        <div class="grid">
+            <div class="item item--large ">
+                <div class="item__details">
+                    jelly-o brownie sweet
+                </div>
+            </div>
+            <div class="item item--medium">
+                <div class="item__details">
+                    Muffin jelly gingerbread
+                </div>
+            </div>
+            <div class="item item--large">
+                <div class="item__details">
+                    sesame snaps chocolate
+                </div>
+            </div>
+            <div class="item item--large">
+                <div class="item__details">
+                    Oat cake
+                </div>
+            </div>
+            <div class="item item--full">
+                <div class="item__details">
+                    jujubes cheesecake
+                </div>
+            </div>
+            <div class="item item--medium">
+                <div class="item__details">
+                    Dragée pudding brownie
+                </div>
+            </div>
+            <div class="item item--large">
+                <div class="item__details">
+                    Oat cake
+                </div>
+            </div>
+            <div class="item item item--medium">
+                <div class="item__details">
+                    powder toffee
+                </div>
+            </div>
+            <div class="item item--large">
+                <div class="item__details">
+                    pudding cheesecake
+                </div>
+            </div>
+            <div class="item item--large">
+                <div class="item__details">
+                    toffee bear claw
+                </div>
+            </div>
+            <div class="item item--full">
+                <div class="item__details">
+                    toffee bear claw
+                </div>
+            </div>
 
+        </div>
+    </section>
+</div>
+<section class="contact">
+    <div class="info">
+        <p class="info__text"></p>
+        <div class="info__icon">
+            <div class="info__icon--facebook"></div>
+            <div class="info__icon--instagram"></div>
+        </div>
+    </div>
+    <form class="messageForm">
+        <label> <input class="messageForm__input">
+        </label>
+        <label> <input class="messageForm__input">
+        </label>
+        <label> <input class="messageForm__input">
+        </label>
+        <button class="messageForm__button--active"></button>
+        <button class="messageForm__button--inactive"></button>>
+        <p> class="messageForm__validation--active"</p>
+        <p >class="messageForm__validation--inactive"</p>
+    </form>
+
+</section>
+<footer class="footer">
+    <p class="footer__copyrights"></p>
+</footer>
 </body>
 </html>
