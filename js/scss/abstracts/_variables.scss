@@ -1,7 +1,18 @@
-$title-color:
-$subtitle-color:
 
-$img-path:
+//colors
+$title-color:#B077A6;
+$subtitle-color:#C496966;
 
+$primary-color:#EFE7EC;
+$secondary-color:#C9A0BD;
 
-$breakpoints:
+//imagespath
+$img-path:"../../../images";
+
+//breakpoints
+
+$breakpoint-small:"(max-width:320px)";
+$breakpoint-medium:"(max-width:768px)";
+$breakpoint-large:"(max-width:1024px)";
+
+//fonts
