@@ -12,7 +12,6 @@ section {
   position: relative;
   height: 100%;
   font-size: 13px;
-  font-family: 'Arvo', monospace;
   width: 90vw;
   padding-bottom: 80px;
 
@@ -39,7 +38,7 @@ section {
   display: none;
   padding: 2rem;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-mobile-extraLarge) {
     padding: 4rem;
   }
 
@@ -147,7 +146,7 @@ section {
   &--full {
     grid-column-end: auto;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $breakpoint-mobile-extraLarge) {
       grid-column: 1/-1;
       grid-row-end: span 2;
     }

@@ -9,7 +9,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 50px;
 
+  .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .info__text{
+      text-align: center;
+    }
+  }
   .messageForm{
     display: flex;
     flex-direction: column;

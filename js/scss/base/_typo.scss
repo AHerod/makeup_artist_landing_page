@@ -1,4 +1,6 @@
 @import "../abstracts/_variables.scss";
+@import "../abstracts/_mixxins.scss";
+
 
 
 .header__title{
@@ -83,12 +85,12 @@
 }
 
 .sectionTitle{
-  font-family: $sectionTitle-font;
-  color: $subtitle-color;
-  font-size: 50px;
-  padding-bottom: 20px;
+  @extend %subtitles;
 }
 
+.about__title{
+  @extend %subtitles;
+}
 .sectionText{
   font-family: $sectionText-font;
   color: $sectionText-color;

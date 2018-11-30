@@ -1,0 +1,12 @@
+@import "../abstracts/_variables.scss";
+@import "../abstracts/_mixxins.scss";
+
+.info__icon--facebook{
+  position: absolute;
+ @extend %icons;
+}
+.info__icon--instagram {
+  position: absolute;
+  right: 50px;
+  @extend %icons;
+}
