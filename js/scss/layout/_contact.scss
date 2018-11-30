@@ -19,11 +19,26 @@
     .info__text{
       text-align: center;
     }
+    .info__icon{
+      padding-top: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:first-child{
+        font-size: 50px;
+      }
+      &:last-child{
+        font-size: 50px;
+
+      }
+    }
   }
   .messageForm{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 50px;
+    width: 100vw;
   }
 }

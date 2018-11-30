@@ -21,3 +21,16 @@
   }
 }
 
+.messageForm__button--active{
+  width: 80%;
+  height: 50px;
+  border: 2px solid $secondary-color;
+  color: #ffffff;
+  background-color: $secondary-color;
+  font-weight: 400;
+  margin-top: 7px;
+  padding: 20px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+

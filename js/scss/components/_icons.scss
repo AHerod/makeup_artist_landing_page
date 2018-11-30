@@ -2,11 +2,16 @@
 @import "../abstracts/_mixxins.scss";
 
 .info__icon--facebook{
-  position: absolute;
+  padding: 0 8px;
+}
+
+.info__icon--instagram{
+  padding: 0 8px;
+
+}
+.info__icon--facebookStyle{;
  @extend %icons;
 }
-.info__icon--instagram {
-  position: absolute;
-  right: 50px;
+.info__icon--instagramStyle {
   @extend %icons;
 }

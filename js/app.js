@@ -28,12 +28,12 @@ $(".header__button").click(function () {
 // images on icons
 $(function () {
 
-    $('.info__icon--facebook').after('<img src="../images/icon-fb.png"  class="info__icon--facebook"/>');
+    $('.info__icon--facebook').after('<img src="../images/icon-fb.png"  class="info__icon--facebookStyle"/>');
 
 });
 
 $(function () {
 
-    $('.info__icon--instagram').after('<img src="../images/icon-insta.png"  class="info__icon--instagram"/>');
+    $('.info__icon--instagram').after('<img src="../images/icon-insta.png"  class="info__icon--instagramStyle"/>');
 
 });

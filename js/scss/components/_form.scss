@@ -1,1 +1,43 @@
 @import "../abstracts/_variables.scss";
+label{
+  width: 80vw;
+}
+input{
+  height: 70px;
+}
+textarea{
+  height: 100px;
+  padding-top: 17px;
+}
+input, textarea{
+  display:block;
+  width:100%;
+  margin:0 auto;
+  border: none;
+  border-bottom:2px solid $primary-color;;
+  color: $infoText-color;
+  resize: none;
+  font-size: 20px;
+  font-family: $about-title-font;
+
+  &::placeholder{
+    -webkit-transform:translateY(0px);
+    transform:translateY(0px);
+    -webkit-transition:.5s;
+    transition:.5s;
+  }
+  &:hover,
+  &:focus,
+  &:active:focus{
+    color:$infoText-color;
+    outline:none;
+    border-bottom:2px solid $secondary-color;
+    &::placeholder{
+      color:$secondary-color;
+      position:relative;
+      -webkit-transform:translateY(-20px);
+      transform:translateY(-20px);
+
+    }
+  }
+}
