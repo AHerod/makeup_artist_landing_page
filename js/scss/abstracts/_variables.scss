@@ -1,18 +1,34 @@
-
 //colors
 $title-color:#B077A6;
-$subtitle-color:#C496966;
+$subtitle-color: #C49696;
 
 $primary-color:#EFE7EC;
 $secondary-color:#C9A0BD;
 
-//imagespath
+$sectionText-color: #666566;
+$infoText-color: #666566;
+
+
+//images path
 $img-path:"../../../images";
 
-//breakpoints
 
+//breakpoints
 $breakpoint-small:"(max-width:320px)";
 $breakpoint-medium:"(max-width:768px)";
 $breakpoint-large:"(max-width:1024px)";
 
+
 //fonts
+$title-font: 'Clicker Script', cursive;
+    /*subtitle-font is for: logo subtitle, sections' titles,
+    contact section (forn included)*/
+$subtitle-font:'Barlow Condensed', sans-serif;
+$sectionText-font:  'Signika', sans-serif;
+$button-font: 'Roboto Condensed', sans-serif;
+$copyrights-font: "Curier New", sans-serif;
+
+
+
+
+

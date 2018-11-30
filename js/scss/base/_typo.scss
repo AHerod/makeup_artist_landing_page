@@ -1,0 +1,35 @@
+@import "../abstracts/_variables.scss";
+
+
+.header__title{
+  font-family: $title-font;
+  color: $title-color;
+  font-size: 150px;
+}
+
+.header__subtitle{
+  font-family: $subtitle-font;
+  color: $subtitle-color;
+  font-size: 40px;
+}
+
+.sectionTitle{
+  font-family: $subtitle-font;
+  color: $subtitle-color;
+  font-size: 50px;
+}
+
+.sectionText{
+  font-family: $sectionText-font;
+  color: $sectionText-color;
+}
+
+.info__text{
+  font-family: $subtitle-font;
+  color: $infoText-color;
+  font-size: 50px;
+}
+.footer__copyrights{
+  font-family: $copyrights-font;
+  color: $sectionText-color;
+}
