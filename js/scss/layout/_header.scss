@@ -12,6 +12,15 @@
   align-items: center;
   padding-top: 90px;
 
+  &:after{
+    content: "";
+    width: 100vw;
+    height: 70%;
+    background-color: $primary-color;
+    display: inline-block;
+
+  }
+
   .header__button{
     margin-top: 100px;
   }

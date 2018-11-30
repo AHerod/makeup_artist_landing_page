@@ -5,4 +5,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 60px 20px;
+}
+.about__card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .sectionTitle{
+    padding-bottom: 15px;
+  }
+
+  .sectionPhoto{
+    background-image: url('#{$img-path}/8.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 90vw;
+    height: 40vh;
+  }
 }
