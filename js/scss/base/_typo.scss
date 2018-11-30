@@ -100,7 +100,23 @@
   font-family: $subtitle-font;
   color: $infoText-color;
   font-size: 35px;
-}
+  padding-bottom: 20px;
+  @media (min-width: $breakpoint-mobile-large ){
+    font-size: 40px;
+  }
+  @media (min-width: $breakpoint-mobile-medium ){
+    font-size: 45px;
+  }
+  @media (min-width: $breakpoint-desktop-small ) {
+    font-size: 50px;
+    width: 70%;
+    text-align: left;
+  }
+  @media (min-width: $breakpoint-desktop-medium) {
+    font-size: 55px;
+
+  }
+  }
 .footer__copyrights{
   font-family: $copyrights-font;
   color: $sectionText-color;

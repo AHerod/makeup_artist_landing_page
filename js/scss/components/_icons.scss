@@ -2,12 +2,11 @@
 @import "../abstracts/_mixxins.scss";
 
 .info__icon--facebook{
-  padding: 0 8px;
+  margin-right: 7px;
 }
 
 .info__icon--instagram{
-  padding: 0 8px;
-
+  margin: 0 7px;
 }
 .info__icon--facebookStyle{;
  @extend %icons;

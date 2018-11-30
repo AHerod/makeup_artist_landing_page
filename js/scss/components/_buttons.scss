@@ -22,7 +22,7 @@
 }
 
 .messageForm__button--active{
-  width: 80%;
+  width: 80vw;
   height: 50px;
   border: 2px solid $secondary-color;
   color: #ffffff;
@@ -32,5 +32,11 @@
   padding: 20px;
   text-transform: uppercase;
   display: inline-block;
+  @media (min-width: $breakpoint-mobile-extraLarge ) {
+    width: 60vw;
+  }
+  @media (min-width: $breakpoint-desktop-small ) {
+    width: 40vw;
+  }
 }
 

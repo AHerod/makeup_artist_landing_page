@@ -23,4 +23,9 @@
   height: 50px;
   border-radius: 50%;
   @extend %gradient_light;
+  @media (min-width: $breakpoint-desktop-small ) {
+    width: 60px;
+    height: 60px;
+  }
+
 }

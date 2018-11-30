@@ -1,6 +1,12 @@
 @import "../abstracts/_variables.scss";
 label{
   width: 80vw;
+  @media (min-width: $breakpoint-mobile-extraLarge ) {
+    width: 60vw;
+  }
+  @media (min-width: $breakpoint-desktop-small ) {
+    width: 40vw;
+  }
 }
 input{
   height: 70px;
@@ -11,7 +17,7 @@ textarea{
 }
 input, textarea{
   display:block;
-  width:100%;
+  width: 80vw;
   margin:0 auto;
   border: none;
   border-bottom:2px solid $primary-color;;
@@ -39,5 +45,11 @@ input, textarea{
       transform:translateY(-20px);
 
     }
+  }
+  @media (min-width: $breakpoint-mobile-extraLarge ) {
+    width: 60vw;
+  }
+  @media (min-width: $breakpoint-desktop-small ) {
+    width: 40vw;
   }
 }
