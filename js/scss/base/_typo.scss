@@ -2,19 +2,77 @@
 
 
 .header__title{
-  font-family: $title-font;
-  color: $title-color;
-  font-size: 150px;
+  @media (min-width: $breakpoint-mobile-extraLarge ) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h1{
+    font-family: $title-font;
+    color: $title-color;
+    text-align: center;
+
+    font-size: 100px;
+    line-height: 85px;
+
+    @media (min-width: $breakpoint-mobile-medium ) {
+      font-size: 120px;
+      line-height: 100px;
+    }
+    @media (min-width: $breakpoint-mobile-large ) {
+      font-size: 140px;
+      line-height: 115px;
+    }
+    @media (min-width: $breakpoint-mobile-extraLarge ) {
+      font-size: 135px;
+      line-height: 170px;
+      &:first-child{
+        padding-right: 17px;
+      }
+    }
+    @media (min-width: $breakpoint-desktop-small ) {
+      font-size: 160px;
+    }
+    @media (min-width: $breakpoint-desktop-medium ) {
+      font-size: 180px;
+    }
+  }
+
+
 }
 
 .header__subtitle{
   font-family: $subtitle-font;
   color: $subtitle-color;
-  font-size: 40px;
+  text-align: right;
+
+  padding-top: 20px;
+  font-size: 30px;
+
+  @media (min-width: $breakpoint-mobile-medium ) {
+    padding-top: 25px;
+    font-size: 40px;
+  }
+  @media (min-width: $breakpoint-mobile-large ) {
+    padding-top: 30px;
+    font-size: 50px;
+
+  }
+  @media (min-width: $breakpoint-mobile-extraLarge ) {
+    padding-top: 50px;
+    font-size: 50px;
+  }
+  @media (min-width: $breakpoint-desktop-small ) {
+    font-size: 60px;
+  }
+  @media (min-width: $breakpoint-desktop-medium ) {
+    font-size: 70px;
+  }
+
 }
 
 .sectionTitle{
-  font-family: $subtitle-font;
+  font-family: $sectionTitle-font;
   color: $subtitle-color;
   font-size: 50px;
 }

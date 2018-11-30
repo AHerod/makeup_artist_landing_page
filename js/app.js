@@ -11,5 +11,7 @@ import "./scss/layout/_footer.scss";
 import "./scss/layout/_grid.scss";
 import "./scss/layout/_header.scss";
 import "./scss/layout/_navigation.scss";
-
+import  "./scss/layout/_about.scss";
+import  "./scss/layout/_contact.scss";
+import "./scss/layout/_gallery.scss";
 

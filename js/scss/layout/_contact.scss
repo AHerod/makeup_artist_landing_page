@@ -1,19 +1,19 @@
 @import "../abstracts/_variables.scss";
-
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-.header {
+.contact{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 90px;
 
-  .header__button{
-    margin-top: 100px;
+  .messageForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
-
