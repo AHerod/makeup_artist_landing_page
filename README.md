@@ -10,6 +10,7 @@ RWD landing page based on my design.
 - SCSS
 - WEBPACK
 - PHP
+- BEM
 
 
 
