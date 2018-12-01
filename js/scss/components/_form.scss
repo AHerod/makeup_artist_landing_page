@@ -15,7 +15,7 @@ textarea{
   height: 100px;
   padding-top: 17px;
 }
-input, textarea{
+input, textarea, label{
   display:block;
   width: 80vw;
   margin:0 auto;
@@ -25,6 +25,7 @@ input, textarea{
   resize: none;
   font-size: 20px;
   font-family: $about-title-font;
+  background-color: $primary-color;
 
   &::placeholder{
     -webkit-transform:translateY(0px);

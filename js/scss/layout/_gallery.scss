@@ -1,8 +1,11 @@
 @import "../abstracts/_variables.scss";
+@import "../abstracts/_mixxins.scss";
 
 
 .gallery{
   background-color: $primary-color;
+  @extend %sectionShadow;
+
 }
 
 section {

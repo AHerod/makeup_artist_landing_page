@@ -13,12 +13,16 @@
   align-items: center;
   padding-top: 90px;
 
-  &:after{
+  &::after{
     content: "";
     width: 100vw;
-    height: 70%;
+    height: 60%;
+    top:10%;
     background-color: $primary-color;
-    display: inline-block;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    @extend %sectionShadow;
 
   }
 

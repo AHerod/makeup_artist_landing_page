@@ -8,7 +8,7 @@ import "./scss/layout/_navigation.scss";
 import "./scss/layout/_about.scss";
 import "./scss/layout/_contact.scss";
 import "./scss/layout/_gallery.scss";
-import "./scss/base/_animations.scss";
+import "./scss/base/_nav_menu.scss";
 import "./scss/base/_base.scss";
 import "./scss/base/_typo.scss";
 import "./scss/components/_aboutCard.scss";
@@ -36,4 +36,9 @@ $(function () {
 
     $('.info__icon--instagram').after('<img src="../images/icon-insta.png"  class="info__icon--instagramStyle"/>');
 
+});
+
+$('#toggle').click(function() {
+    $(this).toggleClass('active');
+    $('#menu').toggleClass('open');
 });
