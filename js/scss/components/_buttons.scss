@@ -1,42 +1,77 @@
 @import "../abstracts/_variables.scss";
+@import "../abstracts/_mixxins.scss";
 
 .header__button {
+  @extend %buttons;
   width: 180px;
-  border: 2px solid $secondary-color;
-  color: #ffffff;
-  background-color: $secondary-color;
-  font-weight: 100;
-  padding: 20px;
-  text-transform: uppercase;
-  display: inline-block;
-
-  &:hover {
-    color: $secondary-color;
-    font-weight: 700;
-    letter-spacing: 3px;
-    background: none;
-    -webkit-box-shadow: px 5px 40px -10px rgba(0,0,0,0.57);
-    -moz-box-shadow: px 5px 40px -10px rgba(0,0,0,0.57);
-    transition: all 0.3s ease 0s;
+  margin-top: 80px;
+  @media (min-width: $breakpoint-desktop-small) {
+    margin-top: 120px;
   }
 }
 
-.messageForm__button--active{
+.messageForm__button--active {
   width: 80vw;
-  height: 50px;
-  border: 2px solid $secondary-color;
-  color: #ffffff;
-  background-color: $secondary-color;
-  font-weight: 400;
-  margin-top: 7px;
-  padding: 20px;
-  text-transform: uppercase;
-  display: inline-block;
-  @media (min-width: $breakpoint-mobile-extraLarge ) {
+  margin-top: 5px;
+  border: none;
+  @extend %buttons;
+
+  @media (min-width: $breakpoint-mobile-extraLarge) {
     width: 60vw;
   }
-  @media (min-width: $breakpoint-desktop-small ) {
+  @media (min-width: $breakpoint-desktop-small) {
     width: 40vw;
+  }
+}
+
+.nav__navButton {
+  position: fixed;
+  top: 2%;
+  right: 2%;
+  height: $button-height;
+  width: $button-width;
+  cursor: pointer;
+  z-index: 100;
+  transition: opacity .25s ease;
+
+  &:hover {
+    opacity: .7;
+  }
+
+  &.active {
+    .navButton--top {
+      transform: translateY(11px) translateX(0) rotate(45deg);
+      background: $color-active;
+    }
+    .navButton--middle {
+      opacity: 0;
+      background: $color-active;
+    }
+
+    .navButton--bottom {
+      transform: translateY(-11px) translateX(0) rotate(-45deg);
+      background: $color-active;
+    }
+  }
+
+  span {
+    background: $secondary-color;
+    border: none;
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .35s ease;
+    cursor: pointer;
+
+    &:nth-of-type(2) {
+      top: 11px;
+    }
+
+    &:nth-of-type(3) {
+      top: 22px;
+    }
   }
 }
 

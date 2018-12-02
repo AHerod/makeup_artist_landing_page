@@ -1,11 +1,10 @@
 @import "../abstracts/_variables.scss";
 @import "../abstracts/_mixxins.scss";
 
-
-.gallery{
+.gallery {
   background-color: $primary-color;
   @extend %sectionShadow;
-
+  padding: 50px 55px 80px 55px;
 }
 
 section {
@@ -16,41 +15,24 @@ section {
   height: 100%;
   font-size: 13px;
   width: 90vw;
-  padding-bottom: 80px;
 
-  @supports(display: grid) {
+  @supports (display: grid) {
     display: block;
   }
 }
 
-/*.message {
-	border: 1px solid #d2d0d0;
-	padding: 2em;
-	font-size: 1.7vw;
-	box-shadow: -2px 2px 10px 0px rgba(#444, 0.4);
-
-	@supports(display: grid) {
-		display: none;
-	}
-}*/
-.gallery{
+.gallery {
   display: flex;
   justify-content: center;
 }
+
 .section {
   display: none;
-  padding: 2rem;
 
-  @media screen and (min-width: $breakpoint-mobile-extraLarge) {
-    padding: 4rem;
-  }
-
-  @supports(display: grid) {
+  @supports (display: grid) {
     display: block;
   }
 }
-
-
 
 .grid {
   display: grid;
@@ -83,7 +65,7 @@ section {
   &:nth-of-type(3n) {
     background-image: url("../../../images/3.jpg");
     background-size: cover;
-    background-position: center ;
+    background-position: center;
 
   }
 

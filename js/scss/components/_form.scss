@@ -1,56 +1,61 @@
 @import "../abstracts/_variables.scss";
-label{
+
+label {
   width: 80vw;
-  @media (min-width: $breakpoint-mobile-extraLarge ) {
+  @media (min-width: $breakpoint-mobile-extraLarge) {
     width: 60vw;
   }
-  @media (min-width: $breakpoint-desktop-small ) {
+  @media (min-width: $breakpoint-desktop-small) {
     width: 40vw;
   }
 }
-input{
+
+input {
   height: 70px;
 }
-textarea{
+
+textarea {
   height: 100px;
   padding-top: 17px;
 }
-input, textarea, label{
-  display:block;
+
+input, textarea, label {
+  display: block;
   width: 80vw;
-  margin:0 auto;
+  margin: 0 auto;
   border: none;
-  border-bottom:2px solid $primary-color;;
+  border-bottom: 2px solid $primary-color;;
   color: $infoText-color;
   resize: none;
   font-size: 20px;
   font-family: $about-title-font;
-  background-color: $primary-color;
+  //background-color: $primary-color;
 
-  &::placeholder{
-    -webkit-transform:translateY(0px);
-    transform:translateY(0px);
-    -webkit-transition:.5s;
-    transition:.5s;
+  &::placeholder {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition: .5s;
+    transition: .5s;
   }
   &:hover,
   &:focus,
-  &:active:focus{
-    color:$infoText-color;
-    outline:none;
-    border-bottom:2px solid $secondary-color;
-    &::placeholder{
-      color:$secondary-color;
-      position:relative;
-      -webkit-transform:translateY(-20px);
-      transform:translateY(-20px);
+  &:active:focus {
+    color: $infoText-color;
+    outline: none;
+    border-bottom: 2px solid $secondary-color;
+    &::placeholder {
+      color: $secondary-color;
+      position: relative;
+      -webkit-transform: translateY(-20px);
+      transform: translateY(-20px);
 
     }
   }
-  @media (min-width: $breakpoint-mobile-extraLarge ) {
+  @media (min-width: $breakpoint-mobile-extraLarge) {
     width: 60vw;
   }
-  @media (min-width: $breakpoint-desktop-small ) {
+  @media (min-width: $breakpoint-desktop-small) {
     width: 40vw;
   }
 }
+

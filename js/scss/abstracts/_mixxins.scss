@@ -1,37 +1,64 @@
 @import "variables";
-%subtitles{
+
+%subtitles {
   font-family: $sectionTitle-font;
   color: $subtitle-color;
   font-size: 50px;
   padding-bottom: 20px;
 }
-%gradient_light{
-  background : -moz-linear-gradient(0% 50% 0deg,rgba(184, 145, 171, 1) 0%,rgba(198, 171, 181, 1) 83.67%);
-  background : -webkit-linear-gradient(0deg, rgba(184, 145, 171, 1) 0%, rgba(198, 171, 181, 1) 83.67%);
-  background : -webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0,rgba(184, 145, 171, 1) ),color-stop(0.8367,rgba(198, 171, 181, 1) ));
-  background : -o-linear-gradient(0deg, rgba(184, 145, 171, 1) 0%, rgba(198, 171, 181, 1) 83.67%);
-  background : -ms-linear-gradient(0deg, rgba(184, 145, 171, 1) 0%, rgba(198, 171, 181, 1) 83.67%);
+
+%gradient_light {
+  background: -moz-linear-gradient(0% 50% 0deg, rgba(184, 145, 171, 1) 0%, rgba(198, 171, 181, 1) 83.67%);
+  background: -webkit-linear-gradient(0deg, rgba(184, 145, 171, 1) 0%, rgba(198, 171, 181, 1) 83.67%);
+  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0, rgba(184, 145, 171, 1)), color-stop(0.8367, rgba(198, 171, 181, 1)));
+  background: -o-linear-gradient(0deg, rgba(184, 145, 171, 1) 0%, rgba(198, 171, 181, 1) 83.67%);
+  background: -ms-linear-gradient(0deg, rgba(184, 145, 171, 1) 0%, rgba(198, 171, 181, 1) 83.67%);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#B891AB', endColorstr='#C6ABB5' ,GradientType=0)";
-  background : linear-gradient(90deg, rgba(184, 145, 171, 1) 0%, rgba(198, 171, 181, 1) 83.67%);
-  opacity : 0.34;
-  filter: alpha(opacity=34) progid:DXImageTransform.Microsoft.Alpha(opacity=34)
-          progid:DXImageTransform.Microsoft.gradient(startColorstr='#B891AB',endColorstr='#C6ABB5' , GradientType=1);
+  background: linear-gradient(90deg, rgba(184, 145, 171, 1) 0%, rgba(198, 171, 181, 1) 83.67%);
+  opacity: 0.34;
+  filter: alpha(opacity=34) progid:DXImageTransform.Microsoft.Alpha(opacity=34) progid:DXImageTransform.Microsoft.gradient(startColorstr='#B891AB', endColorstr='#C6ABB5', GradientType=1);
 
 }
-%icons{
+
+%icons {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   @extend %gradient_light;
-  @media (min-width: $breakpoint-desktop-small ) {
+  &:hover {
+    opacity: 1;
+    background: $secondary-color;
+  }
+  @media (min-width: $breakpoint-desktop-small) {
     width: 60px;
     height: 60px;
   }
 
 }
 
-%sectionShadow{
-  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-  -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+%sectionShadow {
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+%buttons {
+  border: 2px solid $secondary-color;
+  color: $secondary-color;
+  background-color: $primary-color;
+  font-weight: 100;
+  padding: 20px;
+  text-transform: uppercase;
+  display: inline-block;
+  font-family: $sectionText-font;
+  outline: none;
+  &:hover {
+    color: white;
+    font-weight: 700;
+    letter-spacing: 3px;
+    background-color: $secondary-color;
+    -webkit-box-shadow: px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    transition: all 0.3s ease 0s;
+  }
 }

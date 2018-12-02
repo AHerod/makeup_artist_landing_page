@@ -1,16 +1,19 @@
 @import "../abstracts/_variables.scss";
 @import "../abstracts/_mixxins.scss";
 
-.info__icon--facebook{
+.info__icon--facebook {
   margin-right: 7px;
 }
 
-.info__icon--instagram{
+.info__icon--instagram {
   margin: 0 7px;
 }
-.info__icon--facebookStyle{;
- @extend %icons;
+
+.info__icon--facebookStyle {
+  @extend %icons;
+
 }
+
 .info__icon--instagramStyle {
   @extend %icons;
 }

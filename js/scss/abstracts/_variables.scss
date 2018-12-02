@@ -8,10 +8,8 @@ $secondary-color: #C9A0BD;
 $sectionText-color: #666566;
 $infoText-color: #666566;
 
-
 //images path
 $img-path: "../../../images";
-
 
 //breakpoints
 $breakpoint-mobile-small: 320px;
@@ -21,12 +19,11 @@ $breakpoint-mobile-extraLarge: 768px;
 $breakpoint-desktop-small: 1024px;
 $breakpoint-desktop-medium: 1440px;
 
-
 //fonts
 //$title-font: 'Clicker Script', cursive;
 $title-font: 'Euphoria Script', cursive;
-    /*subtitle-font is for: logo subtitle, sections' titles,
-    contact section (forn included)*/
+/*subtitle-font is for: logo subtitle, sections' titles,
+contact section (forn included)*/
 $subtitle-font: 'Barlow Condensed', sans-serif;
 $sectionTitle-font: 'Barlow Condensed', sans-serif;
 $about-title-font: 'Barlow Condensed', sans-serif;
@@ -34,8 +31,7 @@ $sectionText-font: 'Signika', sans-serif;
 $button-font: 'Roboto Condensed', sans-serif;
 $copyrights-font: "Curier New", sans-serif;
 
-
-$color-active: #FFF;
+$color-active: $secondary-color;
 $color-link: #FFF;
 
 $button-height: 27px;

@@ -13,18 +13,23 @@
     <link href="https://fonts.googleapis.com/css?family=Euphoria+Script" rel="stylesheet">
 </head>
 <body>
-<div class="navButton" id="toggle">
-    <span class="navButton__top"></span>
-    <span class="navButton__middle"></span>
-    <span class="navButton__bottom"></span>
+<div class="nav">
+    <p class="nav__title">Natalia Sztuka </p>
+    <p class="nav__subtitle">makeup artist</p>
+    <div class="nav__navButton" id="toggle">
+        <span class="navButton--top"></span>
+        <span class="navButton--middle"></span>
+        <span class="navButton--bottom"></span>
+    </div>
 </div>
+
 
 <div class="menu" id="menu">
     <nav class="menu__overlay">
         <ul>
-            <li ><a href="#">O mnie</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Kontakt</a></li>
+            <li><a href="#about">O mnie</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Kontakt</a></li>
         </ul>
     </nav>
 </div>
@@ -36,9 +41,9 @@
     <div class="header__subtitle">
         <h2>makeup artist</h2>
     </div>
-    <button class="header__button"> PORTFOLIO </button>
+    <button class="header__button"> PORTFOLIO</button>
 </div>
-<div class="about">
+<div class="about" id="about">
     <h1 class="about__title">O mnie</h1>
     <div class="about__card">
         <div class="sectionPhoto"></div>
@@ -53,81 +58,61 @@
     </div>
     <img src="" class="about__photo"/>
 </div>
-<div class="gallery">
+<div class="gallery" id="portfolio">
     <section class="portfolio">
         <h1 class="sectionTitle">Portfolio</h1>
         <div class="grid">
             <div class="item item--large ">
-                <div class="item__details">
-                    jelly-o brownie sweet
-                </div>
+
             </div>
             <div class="item item--large">
-                <div class="item__details">
-                    Muffin jelly gingerbread
-                </div>
+
             </div>
             <div class="item item--large">
-                <div class="item__details">
-                    sesame snaps chocolate
-                </div>
+
             </div>
             <div class="item item--large">
-                <div class="item__details">
-                    Oat cake
-                </div>
+
             </div>
             <div class="item item--full">
-                <div class="item__details">
-                    jujubes cheesecake
-                </div>
-            </div>
-            <div class="item item--medium">
-                <div class="item__details">
-                    Dragée pudding brownie
-                </div>
+
             </div>
             <div class="item item--large">
-                <div class="item__details">
-                    Oat cake
-                </div>
-            </div>
-            <div class="item item item--medium">
-                <div class="item__details">
-                    powder toffee
-                </div>
+
             </div>
             <div class="item item--large">
-                <div class="item__details">
-                    pudding cheesecake
-                </div>
+
+            </div>
+            <div class="item item item--large">
+
             </div>
             <div class="item item--large">
-                <div class="item__details">
-                    toffee bear claw
-                </div>
+
+            </div>
+            <div class="item item--large">
+
             </div>
             <div class="item item--full">
-                <div class="item__details">
-                    toffee bear claw
-                </div>
+
             </div>
 
         </div>
     </section>
 </div>
-<div class="contact">
+<div class="contact" id="contact">
     <div class="info">
         <p class="info__text">Skontaktuj się ze mną</p>
         <div class="info__icon">
-            <a href="https://www.facebook.com/Natalia_maluje-106906159982915/" target="_blank"><i class="info__icon--facebook"></i> </a>
-            <a href="https://www.instagram.com/natalia_maluje/" target="_blank"><i class="info__icon--instagram"></i></a>
+            <a href="https://www.facebook.com/Natalia_maluje-106906159982915/" target="_blank"><i
+                    class="info__icon--facebook"></i> </a>
+            <a href="https://www.instagram.com/natalia_maluje/" target="_blank"><i
+                    class="info__icon--instagram"></i></a>
         </div>
     </div>
     <form class="messageForm">
-        <label> <input class="messageForm__input" type = "text" placeholder="imię">
+        <label><input class="messageForm__input" type="text" placeholder="imię">
         </label>
-        <label> <input class="messageForm__input" type = "email" placeholder="email">
+        <label> <input class="messageForm__input" type="email" placeholder="email">
         </label>
         <label> <textarea class="messageForm__input" placeholder="wiadomość"></textarea>
         </label>
@@ -137,7 +122,7 @@
     </form>
 </div>
 <footer class="footer">
-   <a class="footer__copyrights" href="mailto:agn.j.herod@gmail.com"> 2018 &copy; Agnieszka Herod </a>
+    <a class="footer__copyrights" href="mailto:agn.j.herod@gmail.com"> 2018 &copy; Agnieszka Herod </a>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </body>

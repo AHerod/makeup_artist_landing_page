@@ -1,5 +1,4 @@
 import "./scss/abstracts/_mixxins.scss";
-import "./scss/abstracts/_module.scss";
 import "./scss/abstracts/_variables.scss";
 import "./scss/layout/_footer.scss";
 import "./scss/layout/_gallery.scss";
@@ -8,10 +7,8 @@ import "./scss/layout/_navigation.scss";
 import "./scss/layout/_about.scss";
 import "./scss/layout/_contact.scss";
 import "./scss/layout/_gallery.scss";
-import "./scss/base/_nav_menu.scss";
 import "./scss/base/_base.scss";
 import "./scss/base/_typo.scss";
-import "./scss/components/_aboutCard.scss";
 import "./scss/components/_buttons.scss";
 import "./scss/components/_form.scss";
 import "./scss/components/_icons.scss";
@@ -38,7 +35,24 @@ $(function () {
 
 });
 
-$('#toggle').click(function() {
+// hamburger menu button
+
+$('#toggle').click(function () {
     $(this).toggleClass('active');
     $('#menu').toggleClass('open');
 });
+
+
+//nav bar scroll
+
+(function($) {
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 200) {
+                $('.nav').fadeIn(500);
+            } else {
+                $('.nav').fadeOut(500);
+            }
+        });
+    });
+})(jQuery);

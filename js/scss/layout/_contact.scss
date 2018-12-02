@@ -1,58 +1,61 @@
 @import "../abstracts/_variables.scss";
-*{
+
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-.contact{
+
+.contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 50px 0;
 
-  .info{
+
+  .info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    .info__text{
+    .info__text {
       text-align: center;
     }
-    .info__icon{
+    .info__icon {
       padding-top: 10px;
       display: flex;
       justify-content: center;
       align-items: center;
-      &:first-child{
+      &:first-child {
         font-size: 50px;
       }
-      &:last-child{
+      &:last-child {
         font-size: 50px;
 
       }
     }
   }
-  .messageForm{
+  .messageForm {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 30px;
     width: 80vw;
   }
 
-  @media (min-width: $breakpoint-desktop-small ) {
+  @media (min-width: $breakpoint-desktop-small) {
     display: flex;
     flex-direction: row;
     width: 100vw;
     margin-bottom: 80px;
 
-    .info__icon{
+    .info__icon {
       align-items: center;
       justify-content: center;
     }
-    .messageForm{
+    .messageForm {
       width: 50vw;
     }
 
