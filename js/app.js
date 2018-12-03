@@ -45,14 +45,14 @@ $('#toggle').click(function () {
 
 //nav bar scroll
 
-(function($) {
+$(function() {
     $(document).ready(function(){
         $(window).scroll(function(){
-            if ($(this).scrollTop() > 200) {
+            if ($(this).scrollTop() > 400) {
                 $('.nav').fadeIn(500);
             } else {
                 $('.nav').fadeOut(500);
             }
         });
     });
-})(jQuery);
+});

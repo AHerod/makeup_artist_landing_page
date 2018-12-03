@@ -2,6 +2,7 @@
 @import "../abstracts/_mixxins.scss";
 
 .header__title {
+  z-index: 100;
   @media (min-width: $breakpoint-mobile-extraLarge) {
     display: flex;
     justify-content: center;
@@ -47,6 +48,7 @@
 }
 
 .header__subtitle {
+  z-index: 100;
 
   font-family: $subtitle-font;
   color: $subtitle-color;
@@ -121,20 +123,27 @@
   font-size: 12px;
 }
 
-.nav__title{
-  padding-left: 55px;
+.nav__title {
   font-family: $title-font;
   color: $title-color;
   font-size: 34px;
   font-weight: 900;
   line-height: 40px;
   padding-top: 5px;
+  padding-left: 15px;
+  @media (min-width: $breakpoint-mobile-large) {
+    padding-left: 70px;
+  }
 }
-.nav__subtitle{
+
+.nav__subtitle {
   font-family: $subtitle-font;
   color: $subtitle-color;
   font-size: 14px;
   line-height: 0;
   font-weight: 600;
-  padding-left: 165px;
+  padding-left: 125px;
+  @media (min-width: $breakpoint-mobile-large) {
+    padding-left: 180px;
+  }
 }

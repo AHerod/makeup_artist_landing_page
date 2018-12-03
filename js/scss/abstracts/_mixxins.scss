@@ -41,6 +41,11 @@
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
+%headerShadow{
+  -webkit-box-shadow: 0 0 57px -17px        rgba(0,0,0,0.75);
+  -moz-box-shadow: 0 0 57px -17px rgba(0,0,0,0.65);
+  box-shadow: 0 0 57px -17px rgba(0,0,0,0.65);
+}
 
 %buttons {
   border: 2px solid $secondary-color;

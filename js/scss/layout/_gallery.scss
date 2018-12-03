@@ -1,12 +1,6 @@
 @import "../abstracts/_variables.scss";
 @import "../abstracts/_mixxins.scss";
 
-.gallery {
-  background-color: $primary-color;
-  @extend %sectionShadow;
-  padding: 50px 55px 80px 55px;
-}
-
 section {
   display: flex;
   justify-content: center;
@@ -22,12 +16,17 @@ section {
 }
 
 .gallery {
+  background-color: $primary-color;
+  padding: 50px 55px 80px 55px;
   display: flex;
   justify-content: center;
+  @extend %headerShadow;
+
 }
 
 .section {
   display: none;
+
 
   @supports (display: grid) {
     display: block;
@@ -41,6 +40,7 @@ section {
   grid-auto-rows: 150px;
   grid-auto-flow: row dense;
 }
+
 
 .item {
   position: relative;
@@ -137,24 +137,4 @@ section {
     }
   }
 
-  // display none usunac jesli chce miec opisy
-  &__details {
-    position: relative;
-    z-index: 1;
-    padding: 15px;
-    color: #444;
-    background: #fff;
-    text-transform: lowercase;
-    letter-spacing: 1px;
-    display: none;
-
-    // LICZNIK ZDJĘĆ
-    &:before {
-      content: counter(item-counter);
-      font-weight: bold;
-      font-size: 1.1rem;
-      padding-right: 0.5em;
-      color: #444;
-    }
-  }
 }

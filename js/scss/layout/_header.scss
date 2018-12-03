@@ -6,7 +6,8 @@
   margin: 0;
   padding: 0;
 }
-body{
+
+body {
   //background-image: url('#{$img-path}/bg4.jpg');
   //background-size: contain;
 }
@@ -17,18 +18,24 @@ body{
   justify-content: center;
   align-items: center;
   padding-top: 90px;
+  background-image: url('#{$img-path}/powder.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding-bottom: 50px;
 
   &::after {
     content: "";
-    width: 100vw;
-    height: 50%;
+    width: 80vw;
+    height: 80vh;
     top: 10%;
-    background-color: rgba(239,231,236,0.7);
+    background-color: rgba(239, 231, 236, 0.9);
     display: block;
     position: absolute;
-    z-index: -1;
-    @extend %sectionShadow;
+    @extend %headerShadow;
+    @media (min-width: $breakpoint-mobile-small) {
 
+    }
   }
 
 }
