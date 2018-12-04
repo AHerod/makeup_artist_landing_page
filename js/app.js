@@ -48,10 +48,10 @@ $('#toggle').click(function () {
 $(function() {
     $(document).ready(function(){
         $(window).scroll(function(){
-            if ($(this).scrollTop() > 400) {
-                $('.nav').fadeIn(500);
+            if ($(this).scrollTop() > 650) {
+                $('.nav').fadeIn(600);
             } else {
-                $('.nav').fadeOut(500);
+                $('.nav').fadeOut(600);
             }
         });
     });

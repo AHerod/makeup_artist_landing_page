@@ -16,8 +16,9 @@ section {
 }
 
 .gallery {
+  clear: both;
   background-color: $primary-color;
-  padding: 50px 55px 80px 55px;
+  padding: 10px 55px 80px 55px;
   display: flex;
   justify-content: center;
   @extend %headerShadow;
