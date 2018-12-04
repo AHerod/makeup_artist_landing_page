@@ -1,70 +1,103 @@
 @import "../abstracts/_variables.scss";
+@import "../abstracts/_mixxins.scss";
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+//* {
+////  box-sizing: border-box;
+////  margin: 0;
+////  padding: 0;
+////}
+////
+////.contact {
+////  display: flex;
+////  flex-direction: column;
+////  justify-content: center;
+////  align-items: center;
+////  padding: 20px 0;
+////  background-image: url('#{$img-path}/powder_contact.jpg');
+////  background-size: cover;
+////  background-position: center;
+////
+////  .info {
+////    display: flex;
+////    flex-direction: column;
+////    justify-content: center;
+////    align-items: center;
+////    .info__text {
+////      padding-top: 20px;
+////      text-align: center;
+////    }
+////    .info__icon {
+////      padding-top: 10px;
+////      display: flex;
+////      justify-content: center;
+////      align-items: center;
+////      &:first-child {
+////        font-size: 50px;
+////      }
+////      &:last-child {
+////        font-size: 50px;
+////
+////      }
+////    }
+////  }
+////  .messageForm {
+////    display: flex;
+////    flex-direction: column;
+////    justify-content: center;
+////    align-items: center;
+////    padding-top: 30px;
+////    width: 80vw;
+////    //padding-right: 100px;
+////    //margin-left: 250px;
+////    background-color: $primary-color;
+////  }
+////
+////  @media (min-width: $breakpoint-desktop-small) {
+////    display: flex;
+////    flex-direction: row;
+////    width: 100vw;
+////    height: 80vh;
+////
+////    .info__icon {
+////      align-items: center;
+////      justify-content: center;
+////    }
+////    .messageForm {
+////      width: 60vw;
+////      //-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+////      //-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+////      //box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+////    }
+////
+////  }
+////}
+.messageForm {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: $primary-color;
+    }
+.about{
+  border: 10px solid $primary-color;
+  &:last-of-type {
+    @media (min-width: $breakpoint-mobile-extraLarge) {
+      //wycentrowanie
+      float: right;
+      margin-right: 60px;
+      flex-direction: row;
+      max-width: 950px;
+    }
+  }
 }
-
-.contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0;
-  background-image: url('#{$img-path}/powder_contact.jpg');
-  background-size: cover;
-  background-position: center;
-
   .info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
     .info__text {
+      padding-top: 20px;
       text-align: center;
-    }
-    .info__icon {
-      padding-top: 10px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      &:first-child {
-        font-size: 50px;
-      }
-      &:last-child {
-        font-size: 50px;
-
-      }
-    }
-  }
-  .messageForm {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 30px;
-    width: 80vw;
-    //padding-right: 100px;
-    //margin-left: 250px;
-    background-color: $primary-color;
-  }
-
-  @media (min-width: $breakpoint-desktop-small) {
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-
-    .info__icon {
-      align-items: center;
-      justify-content: center;
-    }
-    .messageForm {
-      width: 60vw;
-      //-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-      //-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-      //box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    }
-
-  }
-}
+      font-size: 60px;
+    }}
