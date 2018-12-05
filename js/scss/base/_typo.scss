@@ -5,7 +5,6 @@
   z-index: 1;
   @media (min-width: $breakpoint-mobile-extraLarge) {
     display: flex;
-    justify-content: center;
     align-items: center;
   }
   @media (min-width: $breakpoint-desktop-small) {

@@ -2,6 +2,7 @@
 @import "../abstracts/_mixxins.scss";
 
 .header__button {
+  background: none;
   z-index: 1;
   @extend %buttons;
   width: 180px;

@@ -2,17 +2,16 @@
 @import "../abstracts/_mixxins.scss";
 
 .about {
-  //background-image: url('#{$img-path}/about-01-01.png');
-  //background-size: cover;
-  //background-position: center;
   display: flex;
   flex-direction: column;
   margin: 5rem auto;
   line-height: 1.2;
   overflow: hidden;
   z-index: 0;
-  margin-left: 20px;
-  margin-right: 20px;
+  border: 10px solid $primary-color;
+  @extend %headerShadow;
+  margin-top: 100px;
+
 
   .meta {
     position: relative;
@@ -37,13 +36,12 @@
   }
   p {
     position: relative;
-    font-size: 1.2rem;
-    font-family: $sectionText-font;
+    font-size: 22px;
+    font-family: $about-title-font;
   }
 
-  @media (min-width: $breakpoint-mobile-extraLarge) {
+  @media (min-width: $breakpoint-desktop-small) {
     //wycentrowanie
-    margin-left: 60px;
     flex-direction: row;
     max-width: 950px;
     .meta {
