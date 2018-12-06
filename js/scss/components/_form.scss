@@ -19,19 +19,28 @@ textarea {
   padding-top: 17px;
 }
 
-input, textarea, label {
+label{
+  font-size: 20px;
+  font-family: $about-title-font;
+  background-color: $primary-color;
+  color: $secondary-color;
+  visibility: hidden;
+  display: block;
+
+}
+
+
+input, textarea {
   display: block;
   width: 80vw;
   margin: 0 auto;
   border: none;
-  border-bottom: 2px solid $infoText-color;
-  color: $infoText-color;
+  border-bottom: 2px solid $heading-color;
   resize: none;
   font-size: 20px;
   font-family: $about-title-font;
   background-color: $primary-color;
-
-  //background-color: $primary-color;
+  color: $infoText-color;
 
   &::placeholder {
     -webkit-transform: translateY(0px);

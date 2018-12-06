@@ -35,7 +35,7 @@ section {
 .grid {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-auto-rows: 150px;
   grid-auto-flow: row dense;
 }
@@ -85,8 +85,7 @@ section {
     background-image: url("../../../images/15.jpeg");
   }
   &:nth-of-type(10n) {
-    background-image: url("../../../images/10.jpg");
-    background-position: top;
+    background-image: url("../../../images/tlo.jpeg");
   }
 
   &:nth-of-type(11n) {
@@ -99,6 +98,9 @@ section {
     background-image: url("../../../images/fot3.jpg");
   }
   &:nth-of-type(14n) {
+      background-image: url("../../../images/fot4.jpg");
+    }
+  &:nth-of-type(15n) {
     background-image: url("../../../images/fot4.jpg");
   }
   &:after {

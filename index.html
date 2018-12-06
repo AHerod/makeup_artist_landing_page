@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Natalia Sztuka | makeup artist </title>
+    <link href="https://fonts.googleapis.com/css?family=Hind:300&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Clicker+Script" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Roboto+Condensed" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Euphoria+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed&amp;subset=latin-ext" rel="stylesheet">
 </head>
 <body>
 <div class="nav">
@@ -34,14 +34,16 @@
     </nav>
 </div>
 <div class="header">
-    <div class="header__title">
-        <h1>Natalia </h1>
-        <h1>Sztuka </h1>
+    <div class="header__wrapper">
+        <div class="header__title">
+            <h1>Natalia </h1>
+            <h1>Sztuka </h1>
+        </div>
+        <div class="header__subtitle">
+            <h2>makeup artist</h2>
+        </div>
+        <button class="header__button"> PORTFOLIO</button>
     </div>
-    <div class="header__subtitle">
-        <h2>makeup artist</h2>
-    </div>
-    <button class="header__button"> PORTFOLIO</button>
 </div>
 <div class="about" id="about">
     <div class="meta">
@@ -49,12 +51,12 @@
     </div>
     <div class="about__description">
         <h1 class="sectionTitle">O mnie</h1>
-        <p>Nazywam się Natalia Sztuka. Makijaż to moja pasja od ponad 3 lat, staram się stale poszerzać
+        <p class="sectionText">Nazywam się Natalia Sztuka. Makijaż to moja pasja od ponad 3 lat, staram się stale
+            poszerzać
             swoje umiejętności. Ukończyłam kurs makijażu u Doroty Małeckiej Makeup Artist.
             Swoje doświadczenie zdobywałam między innymi malując dla firmy kosmetycznej
             Resibo oraz wspólpracując przy sesjach zdjeciowych dla salonu sukien ślubnych Loretta.
-            Współpracuję również z drogerią internetową Jasmin oraz iAmelia. Zapraszam do obejrzenia moich prac
-            .</p>
+            Współpracuję również z drogerią internetową Jasmin oraz iAmelia. Zapraszam do obejrzenia moich prac.</p>
     </div>
 
 </div>
@@ -83,7 +85,7 @@
             <div class="item item--large">
 
             </div>
-            <div class="item item item--large">
+            <div class="item item--large">
 
             </div>
             <div class="item item--large">
@@ -105,6 +107,8 @@
             <div class="item item--large">
 
             </div>
+
+
         </div>
     </section>
 </div>
@@ -122,22 +126,25 @@
     </div>
     <div class="about__description">
         <h1 class="sectionTitle">Kontakt</h1>
-        <form class="messageForm">
-            <label><input class="messageForm__input" type="text" placeholder="imię">
-            </label>
-            <label> <input class="messageForm__input" type="email" placeholder="email">
-            </label>
-            <label> <textarea class="messageForm__input" placeholder="wiadomość"></textarea>
-            </label>
-            <button class="messageForm__button--active"> Wyślij</button>
-            <p class="messageForm__validation--active"></p>
-            <p class="messageForm__validation--inactive>"></p>
+        <form class="messageForm" action="form.php" name="contact" method="post">
+            <label for="userName">Imię</label>
+            <input class="messageForm__input" type="text" placeholder="imię" name="userName" id="userName">
+
+            <label for="email">Email</label>
+            <input class="messageForm__input" type="email" placeholder="email" name="email" id="email">
+
+            <label for="message">Wiadomość </label>
+            <textarea class="messageForm__input" placeholder="wiadomość" name="message" id="message"></textarea>
         </form>
+
+        <button class="messageForm__button--active" type="submit" name="submit"> Wyślij</button>
+        <p class="messageForm__validation--active"></p>
     </div>
 </div>
-    <footer class="footer">
-        <a class="footer__copyrights" href="mailto:agn.j.herod@gmail.com"> 2018 &copy; Agnieszka Herod </a>
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<footer class="footer">
+    <a class="footer__copyrights" href="mailto:agn.j.herod@gmail.com"> 2018 &copy; Agnieszka Herod </a><a
+        class="footer__copyrights" href="http://www.freepik.com"> Background designed by Freepik</a>
+
+</footer>
 </body>
 </html>

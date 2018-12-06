@@ -12,47 +12,64 @@ import "./scss/base/_typo.scss";
 import "./scss/components/_buttons.scss";
 import "./scss/components/_form.scss";
 import "./scss/components/_icons.scss";
+import "jquery";
 
 // CTA button scroll animation
 
-$(".header__button").click(function () {
-    $('html,body').animate({
-            scrollTop: $(".portfolio").offset().top
-        },
-        'slow');
-});
+
+
+$(function () {
+    $(document).ready(function () {
+        $(".header__button").click(function () {
+            $('html,body').animate({
+                    scrollTop: $(".portfolio").offset().top
+                },
+                'slow');
+        });
 
 // images on icons
-$(function () {
+        $(function () {
 
-    $('.info__icon--facebook').after('<img src="../images/icon-fb.png"  class="info__icon--facebookStyle"/>');
+            $('.info__icon--facebook').after('<img src="../images/icon-fb.png"  class="info__icon--facebookStyle"/>');
 
-});
+        });
 
-$(function () {
+        $(function () {
 
-    $('.info__icon--instagram').after('<img src="../images/icon-insta.png"  class="info__icon--instagramStyle"/>');
+            $('.info__icon--instagram').after('<img src="../images/icon-insta.png"  class="info__icon--instagramStyle"/>');
 
-});
+        });
 
 // hamburger menu button
 
-$('#toggle').click(function () {
-    $(this).toggleClass('active');
-    $('#menu').toggleClass('open');
-});
+        $('#toggle').click(function () {
+            $(this).toggleClass('active');
+            $('#menu').toggleClass('open');
+        });
 
+// menu overlay on section change
+        $('.menu__overlay a').click(function () {
+            $(this).toggleClass('active');
+            $('#menu').toggleClass('open');
+        });
+        //nav bar scroll
 
-//nav bar scroll
-
-$(function() {
-    $(document).ready(function(){
-        $(window).scroll(function(){
+        $(window).scroll(function () {
             if ($(this).scrollTop() > 650) {
                 $('.nav').fadeIn(600);
             } else {
                 $('.nav').fadeOut(600);
             }
         });
+        //label change
+
+        $(".messageForm__input").each(function () {
+            $(this).one("keypress", function () {
+                $(this).prev().css('visibility', 'visible');
+            });
+
+        });
     });
 });
+
+

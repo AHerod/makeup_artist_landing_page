@@ -2,9 +2,9 @@
 @import "../abstracts/_mixxins.scss";
 
 .header__button {
+  @extend %buttons;
   background: none;
   z-index: 1;
-  @extend %buttons;
   width: 180px;
   margin-top: 40px;
   @media (min-width: $breakpoint-desktop-small) {

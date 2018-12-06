@@ -29,19 +29,17 @@
     background-position: center;
   }
   .about__description {
-    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem;
     background: $primary-color;
     position: relative;
     z-index: 1;
   }
-  p {
-    position: relative;
-    font-size: 22px;
-    font-family: $about-title-font;
-  }
 
   @media (min-width: $breakpoint-desktop-small) {
-    //wycentrowanie
     flex-direction: row;
     max-width: 950px;
     .meta {

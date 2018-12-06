@@ -89,7 +89,10 @@
 }
 
 .sectionText {
-  font-family: $sectionText-font;
+  position: relative;
+  font-size: 22px;
+  font-family: $about-title-font;
+  line-height: 26px;
   color: $sectionText-color;
 }
 
