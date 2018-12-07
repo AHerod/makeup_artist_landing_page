@@ -1,19 +1,60 @@
 @import "../abstracts/_variables.scss";
 @import "../abstracts/_mixxins.scss";
 
-.info__icon--facebook {
-  margin-right: 7px;
+ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: $breakpoint-desktop-small) {
+    display: block;
+  }
 }
 
-.info__icon--instagram {
-  margin: 0 7px;
+.icon {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 40px;
+  color: $heading-color;
+  line-height: 52px;
+  text-align: center;
+  background-color:  $secondary-color;
+  margin-top: 10px;
 }
 
-.info__icon--facebookStyle {
-  @extend %icons;
-
+.icon:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  content: '';
+  box-sizing: content-box;
 }
 
-.info__icon--instagramStyle {
-  @extend %icons;
+.icon__effect .icon {
+@extend %transition-animation;
+}
+
+.icon__effect .icon:after {
+  top: -7px;
+  left: -7px;
+  padding: 7px;
+  box-shadow: 0 0 0 4px $heading-color;
+  @extend %transition-animation;
+  @extend %transition-scale;// mixins
+  opacity: 0;
+}
+
+.icon__effect--ring .icon:hover {
+  background-color:$heading-color;
+  color:  $secondary-color;
+}
+
+.icon__effect--ring .icon:hover:after {
+  @extend %transition-scaled;
+  opacity: 1;
 }

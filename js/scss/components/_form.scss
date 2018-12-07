@@ -11,7 +11,7 @@ label {
 }
 
 input {
-  height: 70px;
+  height: 50px;
 }
 
 textarea {
@@ -20,47 +20,35 @@ textarea {
 }
 
 label{
-  font-size: 20px;
+  font-size: 22px;
   font-family: $about-title-font;
-  background-color: $primary-color;
   color: $secondary-color;
-  visibility: hidden;
   display: block;
+  margin-top: 5px;
+
 
 }
 
 
 input, textarea {
+  padding: 0;
+  padding-left: 10px;
+
   display: block;
   width: 80vw;
   margin: 0 auto;
   border: none;
-  border-bottom: 2px solid $heading-color;
   resize: none;
   font-size: 20px;
   font-family: $about-title-font;
   background-color: $primary-color;
   color: $infoText-color;
+  outline: none;
+  border-bottom: 2px solid $subtitle-color;
 
-  &::placeholder {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-    -webkit-transition: .5s;
-    transition: .5s;
-  }
-  &:hover,
-  &:focus,
-  &:active:focus {
-    color: $infoText-color;
-    outline: none;
+  &:focus{
     border-bottom: 2px solid $secondary-color;
-    &::placeholder {
-      color: $secondary-color;
-      position: relative;
-      -webkit-transform: translateY(-20px);
-      transform: translateY(-20px);
 
-    }
   }
   @media (min-width: $breakpoint-mobile-extraLarge) {
     width: 60vw;
@@ -69,4 +57,8 @@ input, textarea {
     width: 40vw;
   }
 }
-
+.messageForm__validation--active{
+  color: $infoText-color;
+  font-size: 18px;
+  font-family: $about-title-font;
+}

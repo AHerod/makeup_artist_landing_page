@@ -8,10 +8,7 @@
   line-height: 1.2;
   overflow: hidden;
   z-index: 0;
-  border: 10px solid $primary-color;
   @extend %headerShadow;
-  margin-top: 100px;
-
 
   .meta {
     position: relative;
@@ -41,7 +38,7 @@
 
   @media (min-width: $breakpoint-desktop-small) {
     flex-direction: row;
-    max-width: 950px;
+    max-width: 1000px;
     .meta {
       flex-basis: 45%;
       height: auto;
@@ -60,5 +57,10 @@
         z-index: -1;
       }
     }
+
   }
+}
+
+.info{
+  background-color: $secondary-color;
 }

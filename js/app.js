@@ -16,8 +16,6 @@ import "jquery";
 
 // CTA button scroll animation
 
-
-
 $(function () {
     $(document).ready(function () {
         $(".header__button").click(function () {
@@ -28,17 +26,17 @@ $(function () {
         });
 
 // images on icons
-        $(function () {
-
-            $('.info__icon--facebook').after('<img src="../images/icon-fb.png"  class="info__icon--facebookStyle"/>');
-
-        });
-
-        $(function () {
-
-            $('.info__icon--instagram').after('<img src="../images/icon-insta.png"  class="info__icon--instagramStyle"/>');
-
-        });
+//         $(function () {
+//
+//             $('.info__icon--facebook').after('<img src="images/icon-fb.png"  class="info__icon--facebookStyle"/>');
+//
+//         });
+//
+//         $(function () {
+//
+//             $('.info__icon--instagram').after('<img src="images/icon-insta.png"  class="info__icon--instagramStyle"/>');
+//
+//         });
 
 // hamburger menu button
 
@@ -61,14 +59,7 @@ $(function () {
                 $('.nav').fadeOut(600);
             }
         });
-        //label change
 
-        $(".messageForm__input").each(function () {
-            $(this).one("keypress", function () {
-                $(this).prev().css('visibility', 'visible');
-            });
-
-        });
     });
 });
 

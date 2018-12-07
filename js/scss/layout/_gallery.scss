@@ -21,6 +21,9 @@ section {
   display: flex;
   justify-content: center;
   padding-bottom: 40px;
+  background-image: url("../../../images/gallery.png");
+  background-position: center;
+  background-size: cover;
 
 
 }
@@ -29,15 +32,17 @@ section {
   display: none;
   @supports (display: grid) {
     display: block;
+
   }
 }
 
 .grid {
   display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   grid-auto-rows: 150px;
   grid-auto-flow: row dense;
+
 }
 
 
@@ -65,7 +70,7 @@ section {
   }
 
   &:nth-of-type(4n) {
-    background-image: url("../../../images/aneta.jpeg");
+    background-image: url("../../../images/21.jpeg");
   }
 
   &:nth-of-type(5n) {

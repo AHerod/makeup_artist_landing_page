@@ -7,7 +7,8 @@
      height: 60px;
      background-color: white;
      z-index: 100;
-  @extend %headerShadow;
+    top:0;
+    @extend %headerShadow;
    }
 
 
