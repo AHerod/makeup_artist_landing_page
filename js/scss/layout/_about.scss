@@ -30,10 +30,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1.2rem;
     background: $primary-color;
     position: relative;
     z-index: 1;
+    padding: 10px;
+
+    @media (min-width: $breakpoint-desktop-small) {
+      padding: 20px;
+
+    }
   }
 
   @media (min-width: $breakpoint-desktop-small) {

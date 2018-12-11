@@ -137,18 +137,18 @@
         </div>
         <div class="about__description">
             <h1 class="sectionTitle">Kontakt</h1>
-            <form class="messageForm" action="form.php" name="contactform" method="post">
-                <label for="userName">Imię</label>
-                <input class="messageForm__input" type="text" name="userName" id="userName">
+            <form class="messageForm" action="mailer.php" id="ajax-contact"  method="post">
+                <label for="name">Imię</label>
+                <input class="messageForm__input" type="text" name="name" id="name" required>
 
                 <label for="email">Email</label>
-                <input class="messageForm__input" type="email" name="email" id="email">
+                <input class="messageForm__input" type="email" name="email" id="email" required>
 
                 <label for="message">Wiadomość </label>
-                <textarea class="messageForm__input" name="message" id="message"></textarea>
+                <textarea class="messageForm__input" name="message" id="message" required ></textarea>
                 <button class="messageForm__button--active" type="submit" name="submit"> Wyślij</button>
             </form>
-            <p class="messageForm__validation--active"></p>
+            <h1 id="form-messages"></h1>
         </div>
     </div>
 </div>
@@ -156,5 +156,6 @@
 <footer class="footer">
     <a class="footer__copyrights" href="mailto:agn.j.herod@gmail.com"> 2018 &copy; Agnieszka Herod </a>
 </footer>
+<script src="jquery-2.1.0.min.js"></script>
 <script type="text/javascript" src="out.js"></script></body>
 </html>

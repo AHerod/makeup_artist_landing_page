@@ -57,8 +57,13 @@ input, textarea {
     width: 40vw;
   }
 }
-.messageForm__validation--active{
-  color: $infoText-color;
+.messageForm__validation--success{
+  color: green;
+  font-size: 18px;
+  font-family: $about-title-font;
+}
+.messageForm__validation--fail{
+  color: red;
   font-size: 18px;
   font-family: $about-title-font;
 }
