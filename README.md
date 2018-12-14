@@ -1,8 +1,8 @@
 # landing_page_N.Sz
 
-# Landing Page 
->My current project.
-Simple responsive landing page( online protfolio ) based on my design. 
+# Landing Page - Portfolio
+
+Simple responsive landing page( online protfolio ) for makeup aritst - based on my design. 
 
 ### Build with:
 - HTML5
@@ -12,7 +12,3 @@ Simple responsive landing page( online protfolio ) based on my design.
 - WEBPACK
 - PHP
 - BEM
-
-
-
-
